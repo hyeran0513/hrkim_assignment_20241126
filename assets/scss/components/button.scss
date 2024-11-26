@@ -1,0 +1,45 @@
+.btn {
+  border: none;
+  padding: 18px 50px;
+  border-radius: 30px;
+  color: #FFF;
+  background-color: var(--primary-color);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &-small {
+    font-size: 0.75rem;
+    padding: 16px 48px;
+  }
+
+  &-medium {
+    font-size: 0.875rem;
+    padding: 18px 50px;
+  }
+
+  &-large {
+    font-size: 1rem;
+    padding: 20px 52px;
+  }
+
+  &:hover {
+    background-color: var(--primary-color-darken);
+  }
+}
+
+@media (max-width: 1000px) {
+  .btn {
+    &-small {
+      padding: 10px 24px;
+    }
+
+    &-medium {
+      padding: 12px 26px;
+    }
+
+    &-large {
+      padding: 14px 28px;
+    }
+  }
+}

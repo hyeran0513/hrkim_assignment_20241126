@@ -1,0 +1,42 @@
+.box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  margin: 0 auto;
+  max-width: 1080px;
+  width: 100%;
+  
+  &-item {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+
+    & > i {
+      margin-bottom: 10px;
+      color: var(--primary-color);
+      font-size: 2rem;
+    }
+
+    .title {
+      margin-bottom: 6px;
+      font-weight: bold;
+      line-height: 1.3;
+      word-break: keep-all;
+    }
+
+    .content {
+      color: #A0A2A3;
+      font-size: 0.8rem;
+      line-height: 1.3;
+      word-break: keep-all;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .box {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
